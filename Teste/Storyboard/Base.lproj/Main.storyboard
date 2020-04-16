@@ -182,6 +182,17 @@
                                     <constraint firstAttribute="height" constant="25" id="wgW-0j-GAS"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5W3-SJ-l1g">
+                                <rect key="frame" x="326" y="24" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="0VJ-HL-QlM"/>
+                                    <constraint firstAttribute="height" constant="25" id="Obp-Wm-HXu"/>
+                                </constraints>
+                                <state key="normal" image="compartilhar"/>
+                                <connections>
+                                    <action selector="share:" destination="fnh-pz-YVz" eventType="touchUpInside" id="zJ6-Ue-gDp"/>
+                                </connections>
+                            </button>
                             <view contentMode="scaleToFill" id="aUg-ND-H6L">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -199,6 +210,7 @@
                         <constraints>
                             <constraint firstItem="O5x-qP-K01" firstAttribute="centerY" secondItem="0wm-9H-owR" secondAttribute="centerY" id="2ho-Es-CJp"/>
                             <constraint firstItem="E0d-ub-QJu" firstAttribute="top" secondItem="YMp-ph-zCH" secondAttribute="bottom" constant="8" id="3Xo-UM-ax7"/>
+                            <constraint firstItem="pDT-Dn-kLk" firstAttribute="trailing" secondItem="5W3-SJ-l1g" secondAttribute="trailing" constant="24" id="7LE-Ji-WQl"/>
                             <constraint firstItem="vuI-1e-yQY" firstAttribute="centerX" secondItem="UbO-Os-D9n" secondAttribute="centerX" id="Fr7-SM-Tmg"/>
                             <constraint firstItem="pDT-Dn-kLk" firstAttribute="bottom" secondItem="vuI-1e-yQY" secondAttribute="bottom" constant="8" id="KT8-4J-RCl"/>
                             <constraint firstItem="YMp-ph-zCH" firstAttribute="leading" secondItem="pDT-Dn-kLk" secondAttribute="leading" constant="16" id="Rbe-Qd-Scx"/>
@@ -212,6 +224,7 @@
                             <constraint firstItem="pDT-Dn-kLk" firstAttribute="trailing" secondItem="YMp-ph-zCH" secondAttribute="trailing" constant="16" id="kym-cy-lhO"/>
                             <constraint firstItem="A8U-pS-pt9" firstAttribute="top" secondItem="pDT-Dn-kLk" secondAttribute="top" constant="16" id="o8h-6v-F2t"/>
                             <constraint firstItem="vuI-1e-yQY" firstAttribute="top" secondItem="0wm-9H-owR" secondAttribute="bottom" constant="16" id="p1C-3S-WTC"/>
+                            <constraint firstItem="5W3-SJ-l1g" firstAttribute="top" secondItem="pDT-Dn-kLk" secondAttribute="top" constant="24" id="tkn-Ve-9K0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="pDT-Dn-kLk"/>
                     </view>
@@ -279,6 +292,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="compartilhar" width="21" height="21"/>
         <image name="pin" width="21" height="21"/>
         <image name="placeholder" width="300" height="300"/>
     </resources>

@@ -59,6 +59,14 @@ class EventDetailViewController: UIViewController{
            present(eventAlert, animated: true, completion: nil)
        }
     
+    func shareEvent(){
+        
+        let activityVC = UIActivityViewController(activityItems: [self.eventImage.image, self.textFieldDescription.text], applicationActivities: nil)
+        
+        self.present(activityVC, animated: true, completion: nil)
+    }
+    
+    
     @IBAction func goToMap(_ sender: Any) {
         let mapVC = self.storyboard?.instantiateViewController(withIdentifier: "EventMapViewController") as! EventMapViewController
             
@@ -72,4 +80,9 @@ class EventDetailViewController: UIViewController{
     @IBAction func goToCheckIn(_ sender: Any) {
         openAlertCheckIn()
     }
+    
+    @IBAction func share(_ sender: Any) {
+        shareEvent()
+    }
+    
 }

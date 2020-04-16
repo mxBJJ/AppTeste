@@ -14,8 +14,6 @@ import Kingfisher
 class EventsViewModel{
     
     var dataSource:[Event]?
-    var imageView: UIImageView?
-    var image: UIImage?
     
     func getEvents(completion:@escaping ([Event]?) -> Void){
         
@@ -40,5 +38,4 @@ class EventsViewModel{
     func dataSourceSize() -> Int{
         return dataSource?.count ?? 0
     }
-    
 }
