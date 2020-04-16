@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import LinkPresentation
 
 
 class EventDetailViewController: UIViewController{
@@ -61,7 +62,9 @@ class EventDetailViewController: UIViewController{
     
     func shareEvent(){
         
-        let activityVC = UIActivityViewController(activityItems: [self.eventImage.image, self.textFieldDescription.text], applicationActivities: nil)
+        var imageUrl = URL(string: dataSource?.image ?? "")
+        
+        let activityVC = UIActivityViewController(activityItems: [imageUrl,  "\n " + (self.textFieldDescription.text)], applicationActivities: nil)
         
         self.present(activityVC, animated: true, completion: nil)
     }
