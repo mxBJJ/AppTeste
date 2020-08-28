@@ -291,6 +291,7 @@
 					};
 					FEC862202447B97D00BDCB42 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1160;
 						TestTargetID = FEC8620A2447B97B00BDCB42;
 					};
 					FEC8622B2447B97D00BDCB42 = {
@@ -601,6 +602,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2NGC9V6QTA;
 				INFOPLIST_FILE = TesteTests/Info.plist;
@@ -612,6 +614,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.maxmendes.TesteTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Teste/TesteTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Teste.app/Teste";
@@ -623,6 +627,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2NGC9V6QTA;
 				INFOPLIST_FILE = TesteTests/Info.plist;
@@ -634,6 +639,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.maxmendes.TesteTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Teste/TesteTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Teste.app/Teste";

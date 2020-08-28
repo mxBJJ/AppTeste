@@ -62,9 +62,9 @@ class EventDetailViewController: UIViewController{
     
     func shareEvent(){
         
-        var imageUrl = URL(string: dataSource?.image ?? "")
+        let imageUrl = URL(string: dataSource?.image ?? "")
         
-        let activityVC = UIActivityViewController(activityItems: [imageUrl,  "\n " + (self.textFieldDescription.text)], applicationActivities: nil)
+        let activityVC = UIActivityViewController(activityItems: [imageUrl!,  "\n " + (self.textFieldDescription.text)], applicationActivities: nil)
         
         self.present(activityVC, animated: true, completion: nil)
     }

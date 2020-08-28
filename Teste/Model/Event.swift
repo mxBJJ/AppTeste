@@ -19,5 +19,4 @@ struct Event: Codable{
     var title:String?
     var id:String?
     var cupons: [Coupon]?
-    
 }

@@ -40,7 +40,7 @@ class EventDetailViewModel {
     func checkIn(vc: EventDetailViewController?){
         
         var params = Parameters()
-        var header = HTTPHeaders()
+        let header = HTTPHeaders()
         
         userNameMock = "Max Mendes"
         userEmailMock = "maxmendes@teste.com"
